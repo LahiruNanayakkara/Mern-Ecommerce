@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
 import Navbar from "./components/Navbar";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/*" element={<Navigate to="/" />} />
         </Routes>
       </div>
+      <Toaster />
     </div>
   );
 }
